@@ -1,0 +1,4 @@
+# Aufbau der Applikation
+ng new mrx-workspace --no-create-application
+ng generate application skeleton --style=scss --routing --ssr=false --no-standalone
+ng generate library sb-ui-lib
