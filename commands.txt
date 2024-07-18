@@ -2,3 +2,11 @@
 ng new mrx-workspace --no-create-application
 ng generate application skeleton --style=scss --routing --ssr=false --no-standalone
 ng generate library sb-ui-lib
+
+npm install --save-dev eslint @angular-eslint/eslint-plugin @angular-eslint/eslint-plugin-template @typescript-eslint/eslint-plugin @typescript-eslint/parser
+npm install --save-dev prettier-eslint prettier-eslint-cli
+npm install --save-dev @angular-eslint/template-parser
+
+npm install primeng
+npm install primeicons
+npm install primeflex
