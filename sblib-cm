@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# wcm = workspace create module
+# legt Module innerhhalb vom Porjekt sb-ui-lib an
+
+# Überprüfen, ob mindestens ein Argument (Module-Name) übergeben wurde
+if [ "$#" -lt 1 ]; then
+  echo "Usage: $0 <module-name>"
+  exit 1
+fi
+
+# Argumente zuweisen
+MODULE_NAME=$1
+
+# Festen Projektname setzen
+PROJECT_NAME="sb-ui-lib"
+
+# Aktuelles Skript aufrufen
+./wcm "$PROJECT_NAME" "$MODULE_NAME"
+
+echo "Module $MODULE_NAME created in project $PROJECT_NAME."

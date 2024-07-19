@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# wcm = workspace create module
+# legt Module innerhhalb vom Workspace an
+# Überprüfen, ob mindestens zwei Argumente (App-Name und Module-Name) übergeben wurden
+if [ "$#" -lt 2 ]; then
+  echo "Usage: $0 <project-name> <module-name>"
+  exit 1
+fi
+
+# Argumente zuweisen
+PROJECT_NAME=$1
+MODULE_NAME=$2
+
+# Pfad zum Angular Workspace (kann bei Bedarf angepasst werden)
+WORKSPACE_PATH=$(pwd)
+
+# Ins Workspace-Verzeichnis wechseln
+cd "$WORKSPACE_PATH" || { echo "Workspace not found!"; exit 1; }
+
+# Angular CLI verwenden, um das Modul ohne Tests zu erstellen
+ng generate module "$MODULE_NAME" --project "$PROJECT_NAME"
+
+echo "Module $MODULE_NAME created in project $PROJECT_NAME"
