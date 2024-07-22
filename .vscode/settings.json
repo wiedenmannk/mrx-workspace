@@ -14,22 +14,22 @@
   "[typescript]": {
 
     "editor.indentSize": 2,
-    "editor.insertSpaces": true,
+    "editor.insertSpaces": false,
     "editor.detectIndentation": false,
   },
   "[ts]": {
     "editor.indentSize": 2,
-    "editor.insertSpaces": true,
+    "editor.insertSpaces": false,
     "editor.detectIndentation": false,
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": false
   },
   "[json]": {
     "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": false
   },
   "eslint.alwaysShowStatus": true,
   "eslint.validate": [

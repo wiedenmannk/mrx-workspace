@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# skcc = skeleton create component
+# legt Komponenten innerhalb des Skeleton Projekts an.
+
+# Überprüfen, ob mindestens ein Argument (Module-Name) übergeben wurde
+if [ "$#" -lt 1 ]; then
+  echo "Usage: $0 <component-name>"
+  exit 1
+fi
+
+# Argumente zuweisen
+COMPONENT_NAME=$1
+
+# Festen Projektname setzen
+PROJECT_NAME="skeleton"
+
+# Aktuelles Skript aufrufen
+./wcc "$PROJECT_NAME" "$COMPONENT_NAME"
+
+echo "Component $COMPONENT_NAME created in project $PROJECT_NAME."

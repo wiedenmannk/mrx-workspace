@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# sblib-cc = lib create component
+# legt Komponenten innerhalb des sb-ui-lib Projekts an.
+
+# Überprüfen, ob mindestens ein Argument (Module-Name) übergeben wurde
+if [ "$#" -lt 1 ]; then
+  echo "Usage: $0 <component-name>"
+  exit 1
+fi
+
+# Argumente zuweisen
+COMPONENT_NAME=$1
+
+# Festen Projektname setzen
+PROJECT_NAME="sb-ui-lib"
+
+# Aktuelles Skript aufrufen
+./wcc "$PROJECT_NAME" "$COMPONENT_NAME"
+
+echo "Component $COMPONENT_NAME created in project $PROJECT_NAME."

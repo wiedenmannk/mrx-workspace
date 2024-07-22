@@ -2,5 +2,5 @@
  * Public API Surface of sb-ui-lib
  */
 
-export * from './lib/sb-ui-lib.service';
-export * from './lib/sb-ui-lib.component';
+export * from "./lib/primeng/primeng.module";
+export * from "./lib/layout/layout.module";
